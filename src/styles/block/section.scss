@@ -1,0 +1,64 @@
+.section {
+    //height: 100vh;
+    height: 100%;
+    min-height: rem(650px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    &--font-color-green {
+        color: $green;
+        .section__title {
+            color: inherit;
+        }
+    }
+}
+
+.section__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: rem(26px);
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+
+    @include tablets {
+        margin-bottom: rem(33px); 
+    }
+
+    @include phones {
+        font-size: 40px;
+    }
+
+    &--white {
+        position: absolute;
+        left: 7%;
+        top: 15%;
+        color: $white;
+        text-align: left;
+    }
+
+    &--small {
+        font-size: 36px;
+        text-align: left;
+        margin-top: rem(30px);
+        line-height: 1.2;
+        margin-bottom: rem(12px);
+
+        @include tablets {
+            text-align: center;
+            font-size: 30px;
+            margin-top: rem(25px);
+            margin-bottom: 0;
+            max-width: 100%;
+        }
+
+        @include phones {
+            font-size: 30px;
+            margin-top: 0;
+
+        }
+    }
+}
+

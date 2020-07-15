@@ -1,0 +1,43 @@
+.benefits {
+    display: flex;
+
+    @include phones {
+        flex-direction: column;
+    }
+}
+
+.benefits__item {
+    flex: 1;
+    padding: 0 3%;
+    position: relative;
+
+    @include phones {
+        padding: 0;
+        margin-bottom: rem(40px);
+        margin-top: rem(14px);
+    }
+
+    &::before {
+        content: url("./img/bg/точки.png");
+        position: absolute;
+        top: rem(30px);
+        right: 0;
+        transform: translate(50%, 80%);
+
+        @include phones {
+            display: none;
+        }
+    }
+    
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        padding-right: 0;
+
+        &::before {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+.mesegers {
+ display: flex;
+    
+    &__item {
+        margin-right: rem(16px);
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.mesegers__icon {
+
+    &-vk {
+        width: rem(22px);
+        height: rem(22px);
+        fill: #000;
+        opacity: 0.3;
+
+        &:hover {
+         opacity: 1;
+         transition: .4s;
+        }
+    }
+    &-f {
+        width: rem(22px);
+        height: rem(22px);
+        fill: #000;
+        opacity: 0.3;
+
+        &:hover {
+         opacity: 1;
+         transition: .4s;
+        }
+    }
+
+    &-in {
+        width: rem(22px);
+        height: rem(22px);
+        fill: #000;
+        opacity: 0.3;
+
+        &:hover {
+         opacity: 1;
+         transition: .4s;
+        }
+    }
+
+    &-tv {
+        width: rem(22px);
+        height: rem(22px);
+        fill: #000;
+        opacity: 0.3;
+
+        &:hover {
+         opacity: 1;
+         transition: .4s;
+        }
+    }
+}

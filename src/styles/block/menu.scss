@@ -1,0 +1,72 @@
+.menu {
+    padding-top: 8px;
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.menu--fix {
+    display: none;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 rem(10px);
+    justify-content: center;
+}
+
+.menu__item {
+    margin-right: rem(27px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.menu__link {
+    color: #fff;
+    font-size: rem(18px);
+}
+
+
+.menu--active {
+    display: flex;
+    position: fixed;
+    align-items: flex-start;
+    justify-content: center; 
+    z-index: 20;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#333537, 0.99);
+
+    .menu__list {
+        flex-direction: column;
+        margin-top: rem(134px);
+
+        @include phones {
+            margin-top: rem(162px);
+        }
+    }
+
+    .menu__item {
+        margin-right: 0;
+        margin-bottom: rem(30px);
+
+        @include phones {
+            margin-bottom: rem(34px);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .menu__link {
+        font-size: rem(36px);
+    }
+}

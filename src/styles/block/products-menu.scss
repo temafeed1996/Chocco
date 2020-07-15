@@ -1,0 +1,107 @@
+.products-menu-section {
+    background-image: url("../../img/bg/Biscuits.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    background-color: #000;
+    opacity: 0.8;
+    
+}
+
+.products-menu-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    height: 100%;
+  }
+
+.products-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+}
+
+
+.products-menu__item {
+    display: flex;
+    color: #fff;
+    transition: 0.7s;
+  }
+  
+  .products-menu__item.active {
+    @include phones {
+      position: relative;
+      z-index: 5;
+    }
+  }
+
+.products-menu__title {
+    width: rem(100px);
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 36% center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    color: $white;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: #000000;
+        opacity: 0.4;
+    }
+  }
+
+.products-menu__content {
+    background: rgba(47, 50, 52, 0.9);
+    width: 0;
+    overflow: hidden;
+    transition: width 0.7s;
+    color: #fff;
+}
+
+.products-menu__container {
+    padding: rem(40px) rem(65px) rem(45px) rem(43px);
+    position: relative;
+
+}
+
+.products-menu__close {
+    position: absolute;
+    top: rem(20px);
+    right: rem(25px);
+    border: none;
+    background: transparent;
+
+    &-icon {
+        fill: #fff;
+        opacity: 0.7;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.products-menu__text {
+    font-size: rem(48px);
+    font-weight: bold;
+    white-space: nowrap;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    padding-top: rem(40px);
+  }
+
+  .products-menu__content-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  

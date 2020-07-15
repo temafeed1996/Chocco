@@ -1,0 +1,50 @@
+$containerWidth: 940px;
+$baseFontSize: 18px;
+
+//breakpoint
+$tablets: 768px;
+$phones: 480px;
+
+//colors
+$blue: #61c4d9;
+$green: #0b4d3c;
+$gray: #666;
+$white: #fff;
+
+//media
+@function rem($px) {
+    @return $px / $baseFontSize + 0rem;
+}
+
+@mixin tablets {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }  
+}
+
+@mixin phones {
+    @media screen and (max-width: $phones) {
+        @content;
+    }  
+}
+
+@mixin slippers {
+    @media screen and (max-width: $phones) {
+        @content;
+    }  
+}
+
+//z-indexs
+$z-fixed-menu: 100;
+
+//normolize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700;800&display=swap");
+
+//base style
+@import "layout/**/*.scss";
+
+//components
+@import "block/**/*.scss";

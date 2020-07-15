@@ -1,0 +1,27 @@
+.order-section {
+    position: relative;
+    background: url("./img/bg/pattern.png") no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: url("./img/bg/berry1.png");
+        position: absolute;
+        bottom: rem(75px);
+        left: rem(15px);
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &::after {
+        content: url("./img/bg/Sheet1.png");
+        position: absolute;
+        bottom: rem(60px);
+        right: 0;
+
+        @include tablets {
+            display: none;
+        }
+    }
+}

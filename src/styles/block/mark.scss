@@ -1,0 +1,37 @@
+.mark {
+    display: flex;
+
+    &__icon {
+        margin-right: rem(8px);
+
+        &__sheet {
+            width: rem(44px);
+            height: rem(41px);
+            fill: #c6f7ff;
+        }
+
+        &__truck {
+            margin-right: rem(5px);
+            width: rem(50px);
+            height: rem(40px);
+            fill: #c6f7ff;
+        }
+
+        &__meter {
+            width: rem(42px);
+            height: rem(42px);
+            fill: #c6f7ff;
+        }
+
+
+    }
+
+    &__text {
+        font-size: rem(16px);
+        max-width: rem(70px);
+        line-height: 1.3;
+    }
+}
+
+
+

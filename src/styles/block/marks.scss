@@ -1,0 +1,11 @@
+.marks {
+    display: flex;
+
+    &__item {
+        margin-right: rem(47px);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+

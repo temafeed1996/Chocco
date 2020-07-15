@@ -1,0 +1,24 @@
+.benefits-section {
+    position: relative;
+    background: url("./img/bg/pattern_list.png") left top 57% no-repeat;
+
+    @include tablets {
+        background-position: left top 10%;
+    }
+
+    @include phones {
+        background: none;
+    }
+
+    &::before {
+        content: url("./img/bg/raspberry.png");
+        position: absolute;
+        bottom: rem(-125px);
+        left: 0;
+        z-index: 1;
+
+        @include phones {
+            display: none;
+        }
+    }
+}

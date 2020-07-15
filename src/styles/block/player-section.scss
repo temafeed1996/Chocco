@@ -1,0 +1,52 @@
+.player-section {
+   background-color: #f8faf9;
+   background-image: url('./img/bg/sheet_top_right.png'), url('./img/bg/sheet_left_bottom.png');
+   background-repeat: no-repeat, no-repeat;
+   background-position: 89% 16%, 7% 89%;
+   position: relative;
+
+   @include tablets {
+      min-height: rem(613px);
+      background-position: 95% 25%, 0% 70%;
+      background-size: rem(55px);
+   }
+
+   @include phones {
+      min-height: rem(510px);
+   }
+
+   &::before {
+      content: '';
+      position: absolute;
+      width: rem(222px);
+      height: rem(244px);
+      background-image: url("./img/bg/Blackberry_photo.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      bottom: rem(-110px);
+      right: rem(-50px);
+      z-index: 1;
+
+      @include tablets {
+         width: rem(136px);
+         height: rem(148px);
+         background-size: contain;
+         bottom: rem(-60px);
+         right: rem(-40px);
+      }
+
+
+      @include phones {
+         bottom: rem(-70px);
+         right: rem(-30px);
+      }
+  }
+   
+   &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+}
